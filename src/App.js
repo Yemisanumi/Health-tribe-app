@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import PageScreens from './Pages/PageScreens';
+import PageScreentwo from './Pages/PageScreentwo';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={< PageScreens />} />
+          <Route path="/pagetwo" element={< PageScreentwo />} />
         </Routes>
       </Router>
     </div>

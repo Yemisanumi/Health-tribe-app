@@ -1,0 +1,95 @@
+.component {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    
+}
+.component .image {
+    max-width: 100%;
+    width: 393px;
+    height: 471px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 393px;
+}
+
+.linescontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.line1 {
+    width: 48px;
+    height: 6px;
+    background: #006763;   
+}
+.line { 
+    width: 48px;
+    height: 6px;
+    background: #B6B7B8;
+}
+.textbox {
+    background: #006763;
+    margin: 10px auto;
+    margin-top: 20px;
+    width: 351px;
+    height: 200px;
+    border: 2px solid #006763;
+    border-radius: 20px;
+
+}
+.textarea {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 270px;
+    height: 112px;
+    margin-left: 40px;
+    color: #FFFFFF;   
+}
+.textbox h2 {
+    font-size: 24px;     
+}
+.textbox p {
+    font-size: 16px;
+}
+.circle {
+    border-radius: 50px;
+    padding: 10px;
+    height: 80px;
+    width: 70px;
+    border: 2px solid #FFFFFF;
+    margin-left: 140px;
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+}
+.innercircle {
+    background: #F9C114;
+    height: 60px;
+    width: 58px;
+    border: 2px solid #F9C114;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.arrowicon {
+    width: 32px;
+height: 32px;
+display: block;
+    align-items: center;
+
+    
+
+}
