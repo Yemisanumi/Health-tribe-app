@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
  
-const Health = ({ imageUrl, title, text, nextPageUrl, currentPage }) => (
+const Health = ({ image, title, text, nextPageUrl, currentPage }) => (
   <div className="component">
-    <img src={imageUrl} alt="Images" className="image" />
+    <img src={image} alt="Images" className="image" />
     <h2>{title}</h2>
     <p>{text}</p>
     <div className="navigation-indicator">
