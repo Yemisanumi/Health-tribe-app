@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Pages/PageScreens.css';
 import '../Pages/PageScreentwo.css'
+import '../Pages/PageScreenthree.css'
 
-const Health = ({ image, title, text, nextPageUrl, currentPage }) => {
+const Health = ({image, arrowicon, arrowleft, title, text, nextPageUrl, currentPage }) => {
   const renderNextPageLink = () => {
     switch (currentPage) {
       case 1:
-        return <Link to="/pagetwo" className="next-page">Next Page</Link>;
+        return <Link to="/pagetwo" className="arrowicon">next-page</Link>;
       case 2:
-        return <Link to="/pagethree" className="next-page">Next Page</Link>;
+        return <Link to="/pagethree" className="arrowicon">next-page</Link>;
       default:
         return null;
     }
@@ -29,10 +30,15 @@ const Health = ({ image, title, text, nextPageUrl, currentPage }) => {
           <p>{text}</p>
         </div>
         <div className="circle">
-        <div className="innercircle">
-          <span className="arrow"><img src="arrow" alt="" /></span>
+           <div className="innercircle">
+           <img src={arrowicon} alt="" className="arrowicon" />
+           </div>
         </div>
-      </div>
+        <div className='arrowskip'>
+          <img src={arrowleft} alt="" className="arrowleft"/>
+          <p className="skip">Skip</p>
+        </div>
+        <div className="lastline"></div>
       </div>
       
       <div className="navigation-indicator">

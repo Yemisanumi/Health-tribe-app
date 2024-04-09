@@ -1,0 +1,96 @@
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 50%;
+    height: 100vh;
+    width: 450px;
+    margin: 0 auto; 
+    background: linear-gradient(80.07deg, #006763 7.45%, #3FBDA8 107.27%);
+}
+.image {
+    width: 393px;
+    height: 471px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+}
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101px;
+    height: 101px;
+}
+/*.top-design {
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
+}*/
+.bottom-design {
+    padding: 20px;
+    background-color: #E6F4F1;
+    width: 410px;
+    height: 365px;
+    border-radius: 60px 60px 0px 0px;
+    /*margin-top: -30px;
+    z-index: 0;*/
+    bottom: 0;
+    left: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: -20px;
+    border: 1px Mixed solid #C2C3C4
+}
+p {
+    width: 110px;
+    height: 24px;
+    top: 40px;
+    left: 142px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    
+}
+input {
+    padding: 10px;
+    font-size: 18px;
+    font-family: Poppins;
+    word-spacing: 1px;
+    height: 30px;
+    width: 300px;
+    border-radius: 0 20px 20px 0;
+    background: #FFFFFF;
+}
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.account {
+    font-size: 20px;
+    margin-top: 20px;
+    color: black ;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: right;
+}
+
+button {
+    background-color: #3FBDA8;
+    color: white;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 20px;
+    width: 30px;
+}

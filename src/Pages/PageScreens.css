@@ -4,16 +4,13 @@
     justify-content: center;
     width: 100%;
     height: 90vh;
-    background-color: #FFFFFF;
-    
+    background-color:  white;
 }
 .component .image {
-    max-width: 100%;
     width: 393px;
     height: 471px;
-    margin-top: 50px;
+    padding-top: 0px;
     margin-bottom: 10px;
-    width: 393px;
 }
 
 .linescontainer {
@@ -73,6 +70,7 @@
     background: #FFFFFF;
 }
 .innercircle {
+  
     background: #F9C114;
     height: 60px;
     width: 58px;
@@ -85,11 +83,36 @@
     border-radius: 50px;
 }
 .arrowicon {
-    width: 32px;
-height: 32px;
-display: block;
-    align-items: center;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
-    
+.arrowskip {
+    width: 25px;
+    height: 12px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
 
+}
+.skip {
+    margin-top: -50px;
+    margin-left: 310px;
+    color: #E3B012;
+}
+.arrowleft {
+    margin-top: -10px;
+    margin-right: 500px;
+    text-align: right;
+    Color:grey;
+}
+.lastline {
+    margin-top: 5px;
+    width: 150px;
+    height: 1px;
+    background-color: #262626;
+    border: 1px solid #262626;
+    margin-left: 110px;
 }
