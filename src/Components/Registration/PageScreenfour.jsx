@@ -11,6 +11,4 @@ const PageScreenfour = () => {
     )
 }
 
-
 export default PageScreenfour;
-   
