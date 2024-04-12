@@ -10,6 +10,7 @@ import PageScreenfive from './Components/Register/PageScreenfive';
 import PageScreensix from './Components/Verification/PageScreensix';
 import PageScreen7 from './Components/SuccessfulModal/PageScreen7';
 import PageScreen8 from './Components/Personal/PageScreen8';
+import PageScreen9 from './Components/DoctorsNotice/PageScreen9';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/pagesix" element={< PageScreensix />} />
           <Route path="/pageseven" element={< PageScreen7 />} />
           <Route path="/pageeight" element={< PageScreen8 />} />
+          <Route path="/pagenine" element={< PageScreen9 />} />
         </Routes>
       </Router>
     </div>
