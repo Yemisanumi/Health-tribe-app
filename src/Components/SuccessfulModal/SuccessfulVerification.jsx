@@ -5,17 +5,12 @@ import thumbsup from '../../assets/thumbsup.png';
 const SuccessfulVerification = () => {
     return (
         <div className='verification-component'>
-            <div>
-            <img src={thumbsup} alt="thumbsup" />
-            </div>
-            <div className=''>
-                <h2>Verification Successful</h2>
-            </div>
-            <div>
-                <button>Continue</button>
-            </div>
-        </div>       
-       
+            <div className='verification-box'>
+               <img src={thumbsup} alt="thumbsup" className='thumbsup'/>
+               <h2 className='verification-text'>Verification Successful</h2>
+               <button className='green-button'><span>Continue</span></button>
+            </div> 
+        </div>         
     );
   }
   

@@ -75,7 +75,7 @@ input {
     margin-top: 20px;
 }
 .account {
-    font-size: 20px;
+    font-size: 40px;
     margin-top: 20px;
     color: black ;
     font-family: Poppins;
@@ -84,7 +84,7 @@ input {
     text-align: right;
 }
 
-button {
+.green.button {
     background-color: #3FBDA8;
     color: white;
     padding: 0px 0px;
