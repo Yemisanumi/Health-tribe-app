@@ -1,0 +1,44 @@
+.faq-section {
+    width: 3100px;
+    height: 1214px;
+    top: 3365px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.form {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: 1qpx solid wheat;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.dropdown img {
+    margin-left: auto;
+}
+.dropdown-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.dropdown img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3secs;
+}
+.dropdown .open img {
+    transform: rotate(180deg);
+}

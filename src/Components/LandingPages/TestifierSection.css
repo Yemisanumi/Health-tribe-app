@@ -1,0 +1,34 @@
+.testimonials-component {
+    width: 3100px;
+    height: 1214px;
+    top: 3365px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.testimonials {
+font-family: Poppins;
+font-size: 40px;
+font-weight: 600;
+line-height: 60px;
+text-align: center;
+color: linear-gradient(0deg, #1E1E1E, #1E1E1E);
+
+
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    align-items: center;
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.column .rewiewimage {
+    width: 100%;
+    margin-bottom: 10px;
+}

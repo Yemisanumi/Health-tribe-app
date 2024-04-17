@@ -12,6 +12,8 @@ import PageScreen7 from './Components/SuccessfulModal/PageScreen7';
 import PageScreen8 from './Components/Personal/PageScreen8';
 import PageScreen9 from './Components/DoctorsNotice/PageScreen9';
 import PageScreenten from './Components/Document/PageScreenten';
+import TestifierSection from './Components/LandingPages/TestifierSection';
+import Questions from './Components/Faq/Questions';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/pageeight" element={< PageScreen8 />} />
           <Route path="/pagenine" element={< PageScreen9 />} />
           <Route path="/pageten" element={< PageScreenten />} />
+          <Route path="/landingpage" element={< TestifierSection/>} />
+          <Route path="/faq" element={< Questions/>} />
         </Routes>
       </Router>
     </div>
