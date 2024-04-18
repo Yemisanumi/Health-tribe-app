@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={< PageScreens />} />
+          <Route path="/pagescreen" element={< PageScreens />} />
           <Route path="/pagetwo" element={< PageScreentwo />} />
           <Route path="/pagethree" element={< PageScreenthree />} />
           <Route path="/pagefour" element={< PageScreenfour />} />
@@ -30,11 +30,9 @@ function App() {
           <Route path="/pagesix" element={< PageScreensix />} />
           <Route path="/pageseven" element={< PageScreen7 />} />
           <Route path="/pageeight" element={< PageScreen8 />} />
-          <Route path="/landingpage" element={< Landing />} />
+          <Route path="/" element={< Landing />} />
           <Route path="/pagenine" element={< PageScreen9 />} />
           <Route path="/pageten" element={< PageScreenten />} />
-          <Route path="/landingpage" element={< TestifierSection/>} />
-          <Route path="/faq" element={< Questions/>} />
         </Routes>
       </Router>
     </div>
