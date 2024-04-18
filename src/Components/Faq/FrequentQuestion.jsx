@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import './Questions.css';
 import dropdownIcon from '../../assets/dropdownIcon.png'
-import  dropupicon from '../../assets/dropupicon.png'
+import dropupicon from '../../assets/dropupicon.png'
 
 
- 
+
 const FrequentQuestion = () => {
-    const [openIndex, setopenIndex] = useState(null);
+    const [clickedIndex, setClickedIndex] = useState (null);
+
+    const toggleDropdown = (index) => {
+        setClickedIndex (index === clickedIndex ? null : index);
+    }
+   
 
     const questions = [
         'How does Health Tribe work?',
@@ -36,33 +41,46 @@ const FrequentQuestion = () => {
         providing users with access to healthcare services regardless of their geographical locations.`
     ]
 
+    
+
 
     return (
-        <div className='faq-section'style={{ backgrounndColor:'lightgreen', padding: '20px' }}>
-            {questions.map((question, index)=> (
+        <div className='faq-section' >
+            {questions.map((question, index) => (
                 <div className='form' key={index}>
-                <input 
-                type="text" 
-                className='question'
-                placeholder={question}
-                readOnly
-                onClick={() => setopenIndex(index)}
-                style={{ cursor: 'pointer'}}
-                />
+                    <div className='input-container'>
+                        <input
+                            type='text'
+                            className={`question ${index === clickedIndex ? 'no border' : ''}`}
+                            placeholder={question}
+                            readOnly
+                            onClick={() => toggleDropdown(index)}
+                            style={{ cursor: 'pointer' }}
+                        />
 
-                <div className='dropdown' onClick={()=> setopenIndex(index)} style={{cursor: 'pointer' }}>
-                    <img src={index === openIndex ? dropdownIcon : dropupicon} alt="Dropdown Icon" />
-                    {index === openIndex && (
-                        <div className='dropdown-content'>{dropdownContents[index]}</div>
-            )}
+                        <div className='dropdown' 
+                        onClick={() => toggleDropdown(index)} 
+                        style={{ cursor: 'pointer' }}
+                        >
+                            <img 
+                            src={index === clickedIndex ? dropdownIcon : dropupicon} 
+                            alt="Dropdown Icon" 
+                            className='dropdown-icon'
+                            />
+                        </div>    
+                            {index === clickedIndex && (
+                                <div className='dropdown-content'>{dropdownContents[index]}</div>
+                            )}
+                        
+
+                    </div>
+
                 </div>
-            </div>
-        ))}
+            ))}
         </div>
     );
 };
-  
-  
+
 export default FrequentQuestion;
 
 
