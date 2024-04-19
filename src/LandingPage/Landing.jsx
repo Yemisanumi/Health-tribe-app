@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from '../LandingPage/Modal.jsx'
 import '../LandingPage/Landing.css'
 import logo from '../assets/Logo.svg';
 import heroimage from '../assets/Frame 427321576 (1).svg'
@@ -22,24 +23,33 @@ import instagramlogo from '../assets/uil_instagram-alt.svg'
 import facebooklogo from '../assets/Frame (2).svg'
 
 
+
 const Landing = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const close =()=>{setShowModal(false)}
+  const open =()=>{setShowModal(true)}
+
   return (
     <div>
-      <header>
-        <div className="logo">
-          <img src={logo} alt="Logo" width="50" />
+      <header className='header'>
+        <div className='header-div-div'>
+        
+            <img src={logo} alt="Logo" width="50" />
+          
+          <nav className=''>
+            <ul>
+              <li><a className="home" href="#hero-div">Home</a></li>
+              <li><a className="service-btn" href="#Our-services">Services</a></li>
+              <li><a className="about" href="#about-us">About</a></li>
+              <li><a className="contact" href="#contact-us-div">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a className="home" href="#">Home</a></li>
-            <li><a className="service-btn" href="#">Services</a></li>
-            <li><a className="about" href="#">About</a></li>
-            <li><a className="contact" href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+      
       </header>
 
-      <div className="hero-div">
+      <div id="hero-div">
         <div className="hero-content">
           <div className="welcome-txt">Welcome to Health Tribe</div>
           <h1 className="your-health">Your Health, Our Priority.</h1>
@@ -68,21 +78,29 @@ const Landing = () => {
         </p>
       </div>
 
-      <div className="Our-services">
+      <div id="Our-services">
         <div>
           <h3 className="Our-services-txt">Our Services</h3>
           <p className='our-services-para'>Our services are tailored to provide the best user-experience for our clients.</p>
         </div> <br />
         <div  className="slant-txt"> 
           <img src= {onlinecard} alt="discription" />
-          <button className="book-btn">Book A Diagnostic Test <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
-          <button className="ai-btn">AI Symptom Checker <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
-          <button className="access-btn">Access to Stellar Hospitals <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
-          <button className="Pharmaceutical-btn">Pharmaceutical Hub <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
+          <button className="book-btn">
+          <span className='button-with-rotation1'>Book A Diagnostic Test</span>
+            <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
+          <button className="ai-btn">
+          <span className='button-with-rotation2'>AI Symptom Checker </span>
+           <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
+          <button className="access-btn">  
+          <span className='button-with-rotation3'>Access to Stellar Hospitals </span>
+          <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
+          <button className="Pharmaceutical-btn">
+          <span className='button-with-rotation4'>Pharmaceutical Hub </span>
+          <img src={arrowsub} alt="Arrow_Sub_Right_Up" /></button>
         </div>
       </div>
 
-      <div className="about-us">
+      <div id="about-us">
         <h2 className="about-heading">About Us</h2>
         <div className="img-txt">
           <img className='about-us-img1' src={doctorpatient} alt="doctor patient" />
@@ -92,10 +110,6 @@ const Landing = () => {
           <p className='about-us2'>Health Tribe is a mobile application which provides users with seamless and convenient access to a network of doctors from various specialties and locations. It also features AI-driven diagnosis along with more diverse range of options including health tips, diet plans and recommendations for healthcare facilities such as hospitals, pharmacies and diagnostic centers.</p>
           <img className='about-us-img2' src={labtech} alt="lab" />
         </div>
-      </div>
-
-      <div className="testimonials">
-        {/* Testimonials content goes here */}
       </div>
 
       <div className="playstore">
@@ -113,7 +127,7 @@ const Landing = () => {
       </div>
 
       {/* <div className="contact-us"> */}
-        <div className='contact-us-div'>
+        <div id='contact-us-div'>
           <h4 className='contact-us-txt'>Contact Us</h4>
         </div>
         <div>
@@ -123,31 +137,14 @@ const Landing = () => {
              <span className='faq-info'>healthtribe@gmail.com / +234 801 555 9124</span>
           {/* </p> */}
         </div>
-        {/* <div>
-          <p>How does Health Tribe work?</p>
-          <p>Can I find specialists in specific medical fields through Health Tribe?</p>
-          <p>Is the AI-driven diagnosis feature reliable?</p>
-          <p>How can Health Tribe enhance my healthcare experience?</p>
-          <p>Are there additional features besides connecting with doctors?</p>
-          <p>Is Health Tribe available for use in multiple locations?</p>
-        </div> */}
-      {/* </div> */}
-
-      <div className="send-message">
+       
         <div>
-          <form>
-
-
-            {/* Form elements go here */}
-            {/* <button>Send Message</button> */}
-
-          </form>
+          <img  src={arrowup} alt="go up" />
         </div>
-        <img src={arrowup} alt="go up" />
-      
+      <div className="send-message">
         <h4 className='sub-txt'>Subscribe To Our Newsletter</h4>
         <span className='no-spam'>No spam zone. Get latest updates on offers.</span> <br />
-        <a href="">Click Here</a>
+        <button className='click-here-underlined' onClick={open}>Click Here</button>
       </div>
 
       <footer>
@@ -158,16 +155,16 @@ const Landing = () => {
         
         <div>
         <ul className="footer-menu1">
-        <li><a className='about-us-txt' href="#">About Us</a></li>
-          <li><a className='privacy-txt' href="#">Privacy Policy</a></li>
-          <li><a className='terms-txt' href="#">Terms and Conditions</a></li>
+        <li><a className='about-us-txt' href="#0">About Us</a></li>
+          <li><a className='privacy-txt' href="#0">Privacy Policy</a></li>
+          <li><a className='terms-txt' href="#0">Terms and Conditions</a></li>
         </ul>
         </div>
         <div>
         <ul className="footer-menu2">
-          <li><a className='get-txt' href="#">Get Support</a></li>
-          <li><a className='contact-txt' href="#">Contact Us</a></li>
-          <li><a className='faq-txt' href="#">FAQ</a></li>
+          <li><a className='get-txt' href="#0">Get Support</a></li>
+          <li><a className='contact-txt' href="#0">Contact Us</a></li>
+          <li><a className='faq-footer-txt' href="#0">FAQ</a></li>
         </ul>
         </div>
        
@@ -179,7 +176,7 @@ const Landing = () => {
             <img src={verve} alt="Payment Logo 2" />
             <img src={mastercard} alt="Payment Logo 3" />
           </div>
-        </div> <br /> <br /> <br />
+        </div> <br /> 
         
           <div class="Stay-txt">Stay Connected</div>
             <div className='logos-flexx'>
@@ -193,13 +190,16 @@ const Landing = () => {
       </div>
       <br />
       <hr />
+      
         <div className="copyright">
         Copyright &copy; 2024 Health Tribe®. All Rights Reserved
         </div>
       </footer>
-      
+      {showModal && <Modal isOpen={showModal} onClose={close} />}
     </div>
   );
 };
 
 export default Landing;
+
+
