@@ -21,6 +21,12 @@ import twitterlogo from '../assets/Frame.svg'
 import linkedinlogo from '../assets/Frame (1).svg'
 import instagramlogo from '../assets/uil_instagram-alt.svg'
 import facebooklogo from '../assets/Frame (2).svg'
+import HomePage from '../Pages/HomePage';
+import { Link } from 'react-router-dom';
+import Testimonials from '../Components/LandingPages/Testimonials';
+import FrequentQuestion from '../Components/Faq/FrequentQuestion';
+import MessageSection from '../Components/SendMessage/MessageSection'
+
 
 
 
@@ -62,7 +68,7 @@ const Landing = () => {
             <div className='diagnostic'>200  <br /> <span className='diagnostic2'>Diagnostic Labs</span> </div>
             <div className='pharmacies'>50  <br /> <span className='pharmacies2'>Pharmacies</span> </div>
           </div>
-          <button className="download-app-btn">Download App</button>
+          <Link to ="/pagescreen"><button className="download-app-btn">Download App</button></Link>
         </div>
 
         <div className="hero-image">
@@ -118,9 +124,12 @@ const Landing = () => {
             <h3><span className='download-txt'>Download</span> <br />
               <span className='green-health'>HEALTH</span> <span className='yellow-tribe'>TRIBE</span> <span className='app-today'> APP TODAY!</span></h3>
             <p className='your-txt'>Your No. 1 transformative health platform facilitating seamless connections between patients and doctors.</p>
-              <div className='store-img'>    
+              <div className='store-img'>
+                <Link to ="/pagescreen">    
                   <img className='andriod' src={andriod} alt="google play" />
-                  <img className='apple' src={apple} alt="app store" /></div>
+                  <img className='apple' src={apple} alt="app store" />
+                  </Link>
+                  </div>
           </div>
           <div><img className='iphone-img' src={iphone} alt="phone-img" /></div>
         
@@ -132,16 +141,20 @@ const Landing = () => {
         </div>
         <div>
           <h6 className='faq-txt'>Frequently Asked Questions</h6>
+          <FrequentQuestion/>
+
           {/* <p className='faq-que'> */}
             <span className='still-question'>Still have more questions? You can contact our team via</span> <br />
              <span className='faq-info'>healthtribe@gmail.com / +234 801 555 9124</span>
+
           {/* </p> */}
         </div>
-       
+
         <div>
           <img  src={arrowup} alt="go up" />
         </div>
       <div className="send-message">
+
         <h4 className='sub-txt'>Subscribe To Our Newsletter</h4>
         <span className='no-spam'>No spam zone. Get latest updates on offers.</span> <br />
         <button className='click-here-underlined' onClick={open}>Click Here</button>
