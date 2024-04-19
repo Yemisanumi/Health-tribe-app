@@ -1,0 +1,21 @@
+.send-message-section {
+    display: flex;
+    width: 100%;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+} 
+.left-part {
+    padding: 20px;
+    flex: 1;
+    
+background: var(--Green-Gradient, linear-gradient(80deg, #006763 7.45%, #3FBDA8 107.27%));
+
+}
+.header-message {
+    
+}
