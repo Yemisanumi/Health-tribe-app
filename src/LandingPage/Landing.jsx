@@ -22,6 +22,10 @@ import instagramlogo from '../assets/uil_instagram-alt.svg'
 import facebooklogo from '../assets/Frame (2).svg'
 import HomePage from '../Pages/HomePage';
 import { Link } from 'react-router-dom';
+import Testimonials from '../Components/LandingPages/Testimonials';
+import FrequentQuestion from '../Components/Faq/FrequentQuestion';
+import MessageSection from '../Components/SendMessage/MessageSection'
+
 
 
 const Landing = () => {
@@ -97,7 +101,7 @@ const Landing = () => {
       </div>
 
       <div className="testimonials">
-        <HomePage/>
+        <Testimonials/>
       </div>
 
       <div className="playstore">
@@ -123,22 +127,20 @@ const Landing = () => {
         </div>
         <div>
           <h6 className='faq-txt'>Frequently Asked Questions</h6>
+          <FrequentQuestion/>
+
           {/* <p className='faq-que'> */}
             <span className='still-question'>Still have more questions? You can contact our team via</span> <br />
              <span className='faq-info'>healthtribe@gmail.com / +234 801 555 9124</span>
+
           {/* </p> */}
         </div>
 
       <div className="send-message">
-        <div>
-          <form>
+      <MessageSection/>
 
 
-            {/* Form elements go here */}
-            {/* <button>Send Message</button> */}
 
-          </form>
-        </div>
         <img src={arrowup} alt="go up" />
       
         <h4 className='sub-txt'>Subscribe To Our Newsletter</h4>
