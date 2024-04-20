@@ -21,7 +21,7 @@ import twitterlogo from '../assets/Frame.svg'
 import linkedinlogo from '../assets/Frame (1).svg'
 import instagramlogo from '../assets/uil_instagram-alt.svg'
 import facebooklogo from '../assets/Frame (2).svg'
-import HomePage from '../Pages/HomePage';
+
 import { Link } from 'react-router-dom';
 import Testimonials from '../Components/LandingPages/Testimonials';
 import FrequentQuestion from '../Components/Faq/FrequentQuestion';
@@ -117,6 +117,9 @@ const Landing = () => {
           <img className='about-us-img2' src={labtech} alt="lab" />
         </div>
       </div>
+      <div>
+        <Testimonials/>
+      </div>
 
       <div className="playstore">
         
@@ -149,6 +152,7 @@ const Landing = () => {
 
           {/* </p> */}
         </div>
+        <MessageSection/>
 
         <div>
           <img  src={arrowup} alt="go up" />

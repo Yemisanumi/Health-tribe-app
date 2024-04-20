@@ -28,7 +28,7 @@ const SendMessageSection = () => {
         </div>
       </div>
         <div className='right-part'>
-          <img src={doctorpix} alt="doctor picture" />
+          <img src={doctorpix} alt="doctorpicture" />
         </div>
     </div>
   );
