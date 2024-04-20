@@ -1,21 +1,33 @@
 .send-message-section {
     display: flex;
+    
     width: 100%;
+    height: 100vh;
     
 }
 body {
     margin: 0;
     padding: 0;
     
-    
 } 
 .left-part {
     padding: 20px;
-    flex: 1;
-    
-background: var(--Green-Gradient, linear-gradient(80deg, #006763 7.45%, #3FBDA8 107.27%));
+    width: 1600px;
+    background: var(--Green-Gradient, linear-gradient(80deg, #006763 7.45%, #3FBDA8 107.27%));
 
 }
+.right-part {
+    width: 1424px;
+height: 15011px;
+flex-shrink: 0;
+}
+.left-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 603px;
+height: 611px;
+}
 .header-message {
-    
+    margin-top: 0;
 }
