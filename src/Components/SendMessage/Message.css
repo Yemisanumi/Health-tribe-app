@@ -7,8 +7,7 @@
 }
 body {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 } 
 .left-part {
     padding: 20px;
@@ -19,7 +18,7 @@ body {
 .right-part {
     width: 1424px;
 height: 15011px;
-flex-shrink: 0;
+
 }
 .left-box {
     background-color: white;

@@ -14,9 +14,7 @@ import Landing from './LandingPage/Landing';
 
 import PageScreen9 from './Components/DoctorsNotice/PageScreen9';
 import PageScreenten from './Components/Document/PageScreenten';
-import TestifierSection from './Components/LandingPages/TestifierSection';
-import Questions from './Components/Faq/Questions';
-import Message from './Components/SendMessage/Message'
+
 
 function App() {
   return (
