@@ -486,6 +486,8 @@ text-transform: capitalize;
 
 .playstore{
   display: flex;
+  padding: 90px;
+  
 }
 .download-txt{
   color: var(--Primary-primary-500, #C70000);
@@ -495,7 +497,10 @@ text-transform: capitalize;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 60px */
+ 
 }
+
+
 .green-health{
   font-family: Poppins;
   font-size: 58px;
@@ -547,15 +552,18 @@ text-transform: capitalize;
   height: 54px;
 }
 .iphone-img{
-  width: 443px;
-  height: 435px;
-  flex-shrink: 0;
+  
+  height: 800px;
+  width: 1200px;
+  float: right;
 }
 #contact-us-div{
   /* width: 1440px; */
   height: 150px;
   flex-shrink: 0;
   background: #F6FFFE;
+  text-align: center;
+  margin-top: 40px;
 }
 .contact-us-txt{
   color: var(--Typography-1, #1E1E1E);
@@ -563,11 +571,18 @@ text-transform: capitalize;
   text-shadow: 0px 4px 8px rgba(16, 24, 40, 0.08), 0px 2px 4px rgba(16, 24, 40, 0.04);
   /* Header 2/40px Semibold */
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+  margin-top: 70px;
+ 
+}
+.faq-sec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .faq-txt{
   color: var(--Foundation-Green-green-500, #006763);
@@ -575,28 +590,24 @@ text-transform: capitalize;
   
   /* Display /32px Semibold */
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 38px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   /* line-height: 100%; 32px */
   letter-spacing: 0.64px;
   text-transform: capitalize;
 }
-/* .faq-que{
-  color: var(--Typography-3, var(--Color-Gray-Gray-600, #6F6F6F));
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-
+.faq-que {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
 .still-question{
   color: var(--Typography-3, var(--Color-Gray-Gray-600, #6F6F6F));
   text-align: center;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
@@ -604,11 +615,12 @@ text-transform: capitalize;
 .faq-info{
   color: var(--Foundation-Yellow-yellow-700, #B1890E);
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
   text-align: center;
+  
+  margin-top: -15px;
 }
 .sub-txt{
   color: var(--Typography-1, #1E1E1E);

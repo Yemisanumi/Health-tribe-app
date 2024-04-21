@@ -27,6 +27,7 @@ import Testimonials from '../Components/LandingPages/Testimonials';
 import FrequentQuestion from '../Components/Faq/FrequentQuestion';
 import MessageSection from '../Components/SendMessage/MessageSection'
 
+import Modal1 from './Modal1'; // Import the Modal1 component
 
 
 
@@ -35,6 +36,18 @@ const Landing = () => {
 
   const close =()=>{setShowModal(false)}
   const open =()=>{setShowModal(true)}
+
+
+
+  const handleSendMessage = () => {
+    // Logic to send the message
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
 
   return (
     <div>
@@ -134,7 +147,7 @@ const Landing = () => {
                   </Link>
                   </div>
           </div>
-          <div><img className='iphone-img' src={iphone} alt="phone-img" /></div>
+          <div className='phone-pix'><img className='iphone-img' src={iphone} alt="phone-img" /></div>
         
       </div>
 
@@ -142,17 +155,23 @@ const Landing = () => {
         <div id='contact-us-div'>
           <h4 className='contact-us-txt'>Contact Us</h4>
         </div>
-        <div>
+        <div className='faq-sec'>
           <h6 className='faq-txt'>Frequently Asked Questions</h6>
-          <FrequentQuestion/>
-
-          {/* <p className='faq-que'> */}
-            <span className='still-question'>Still have more questions? You can contact our team via</span> <br />
+          <div className='faq-que'>
+          <span className='still-question'>Still have more questions? You can contact our team via</span> <br />
              <span className='faq-info'>healthtribe@gmail.com / +234 801 555 9124</span>
 
-          {/* </p> */}
+          </div> 
+          <FrequentQuestion/>
+
+          
         </div>
         <MessageSection/>
+        <div>
+      <h1>Welcome to the Landing Page</h1>
+      <button onClick={handleSendMessage}>Send Message</button>
+      {showModal && <Modal1 onClose={handleCloseModal} />}
+    </div>
 
         <div>
           <img  src={arrowup} alt="go up" />

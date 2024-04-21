@@ -22,13 +22,13 @@ const SendMessageSection = () => {
             <input type="text" placeholder='Full Name' value={fullName} onChange={(e) => setFullName(e.target.value)} />
             <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             <input type="tel" placeholder='Phone Number' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-            <input type='Type your message' placeholder='Type your message' value={message} onChange={(e) => setMessage(e.target.value)} />
-            <button className='send-button' onClick={handleSendMessage}>Send Message</button>
+            <input className='message-input' type='Type your message' placeholder='Type your message' value={message} onChange={(e) => setMessage(e.target.value)} />
+            <button className='send-button' onClick={handleSendMessage}> <span> Send Message </span></button>
           </form>
         </div>
       </div>
         <div className='right-part'>
-          <img src={doctorpix} alt="doctorpicture" />
+          <img src={doctorpix} alt="doctorpicture" className='doctor-pix' />
         </div>
     </div>
   );

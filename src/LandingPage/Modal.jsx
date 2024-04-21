@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import './Modal.css';
 import xdisplay from '../assets/CLose.svg'
 
+
+
 const Modal = ({ isOpen, onClose }) => {
   const [email, setEmail] = useState('');
 
@@ -38,5 +40,6 @@ const Modal = ({ isOpen, onClose }) => {
     </>
   );
 };
+
 
 export default Modal;
