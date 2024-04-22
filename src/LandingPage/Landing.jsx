@@ -27,27 +27,12 @@ import Testimonials from '../Components/LandingPages/Testimonials';
 import FrequentQuestion from '../Components/Faq/FrequentQuestion';
 import MessageSection from '../Components/SendMessage/MessageSection'
 
-import Modal1 from './Modal1'; // Import the Modal1 component
-
-
 
 const Landing = () => {
   const [showModal, setShowModal] = useState(false)
 
   const close =()=>{setShowModal(false)}
   const open =()=>{setShowModal(true)}
-
-
-
-  const handleSendMessage = () => {
-    // Logic to send the message
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
 
   return (
     <div>
@@ -167,11 +152,6 @@ const Landing = () => {
           
         </div>
         <MessageSection/>
-        <div>
-      <h1>Welcome to the Landing Page</h1>
-      <button onClick={handleSendMessage}>Send Message</button>
-      {showModal && <Modal1 onClose={handleCloseModal} />}
-    </div>
 
         <div>
           <img  src={arrowup} alt="go up" />
