@@ -1,8 +1,6 @@
 .testimonials-component {
-    width: 3100px;
-    height: 1700px;
-    margin-top: 40px;
-    max-width: 2000px;
+    height: 2200px;
+    max-width: 2500px;
     margin: 0 auto;
     padding: 20px;
 
@@ -14,7 +12,7 @@ font-weight: 600;
 line-height: 60px;
 text-align: center;
 color: linear-gradient(0deg, #1E1E1E, #1E1E1E);
-
+margin-top: 150px;
 
 }
 .testimonials-grid {
@@ -27,6 +25,7 @@ color: linear-gradient(0deg, #1E1E1E, #1E1E1E);
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 .column .rewiewimage {
     width: 100%;
